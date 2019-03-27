@@ -1,0 +1,60 @@
+header {
+    background-color: $header-bg-color;
+
+    .header-wrapper {
+        width: $headerWrapperWidth;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 95px;
+        margin: 0 auto;
+
+        h2 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                color: $mainFontColor;
+            }
+        }
+
+        .challenge-button{
+            color: $mainFontColor;
+            border: 1px solid $border-button;
+            border-radius: 30px;
+            padding: 13px 30px;
+            text-transform: uppercase;
+        }
+
+        .select-wrapper {
+            overflow:hidden;
+            width: 18px;
+            background: url(/static/images/arrow.png) no-repeat $header-bg-color;
+            
+            .select-lang {
+                color: $mainFontColor;
+                background: transparent;
+                appearance: none;
+                cursor: pointer;
+                width: 34px;
+                
+                // &:after {
+                //     content: '\02C5';
+                //     position: absolute;
+                //     top: 0;
+                //     right: 0;
+                //     bottom: 0;
+                //     padding: 0 1em;
+                //     background: #fff;
+                //     pointer-events: none;
+                // }
+            }
+        }
+    }
+}

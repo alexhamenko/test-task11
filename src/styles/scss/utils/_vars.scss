@@ -2,19 +2,23 @@
 $mainFont                : 'Segoe UI', sans-serif;
 
 // Main
-$mainFontColor           : #1c8ece;
+$mainFontColor           : #ffffff;
 $mainFontSize            : 14px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.2;
 
 // Fonts
-$secondaryFontColor      : #223b7e;
+$secondaryFontColor      : #1c8ece;
+$darkFontColor           : #223b7e;
 $lightFontColor          : #3697d1;
 
 // Size
 $desktopWidth            : 1280px;
 $tableWidth              : 768px;
 $phoneWidth              : 480px;
+
+$headerWrapperWidth      : 1140px;
+$mainWrapperWidth        : 960px;
 
 // Backgrond color
 $default-bg-color        : #ffffff;
@@ -25,3 +29,4 @@ $header-bg-color         : #223b7e;
 // Border Color
 $border-base             : #223b7e;
 $border-light            : #3697d1;
+$border-button           : #1c8ece;

@@ -1,0 +1,41 @@
+.introduction {
+    background-color: $primary-bg-color;
+
+    .introduction-wrapper {
+        width: $mainWrapperWidth;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        .to-bottom {
+            width: 25px;
+            height: 40px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            position: absolute;
+            bottom: -60px;
+            background: transparent;
+
+            &:after {
+                content: '';
+                background: url(/static/images/scroll.png);
+                position: absolute;
+                width: 6px;
+                height: 10px;
+                top: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: tobottom 1.5s infinite;
+            }
+
+            @keyframes tobottom {
+                100% {
+                    opacity: 0;
+                    top: 22px;
+                }
+            }
+        }
+    }
+}

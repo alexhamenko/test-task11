@@ -75,4 +75,80 @@ td, th {
   padding: 0;
   text-align: left; }
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: mainFontWeight;
+  font-size: 14px; }
+
+header {
+  background-color: #223b7e; }
+  header .header-wrapper {
+    width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 95px;
+    margin: 0 auto; }
+    header .header-wrapper h2 {
+      font-weight: bold;
+      font-size: 30px; }
+    header .header-wrapper nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .header-wrapper nav a {
+        color: #ffffff; }
+    header .header-wrapper .challenge-button {
+      color: #ffffff;
+      border: 1px solid #1c8ece;
+      border-radius: 30px;
+      padding: 13px 30px;
+      text-transform: uppercase; }
+    header .header-wrapper .select-wrapper {
+      overflow: hidden;
+      width: 18px;
+      background: url(/static/images/arrow.png) no-repeat #223b7e; }
+      header .header-wrapper .select-wrapper .select-lang {
+        color: #ffffff;
+        background: transparent;
+        appearance: none;
+        cursor: pointer;
+        width: 34px; }
+
+.introduction {
+  background-color: #0072bc; }
+  .introduction .introduction-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; }
+    .introduction .introduction-wrapper .to-bottom {
+      width: 25px;
+      height: 40px;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      position: absolute;
+      bottom: -60px;
+      background: transparent; }
+      .introduction .introduction-wrapper .to-bottom:after {
+        content: '';
+        background: url(/static/images/scroll.png);
+        position: absolute;
+        width: 6px;
+        height: 10px;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: tobottom 1.5s infinite; }
+
+@keyframes tobottom {
+  100% {
+    opacity: 0;
+    top: 22px; } }
+
 /*# sourceMappingURL=style.css.map */

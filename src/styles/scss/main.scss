@@ -1,4 +1,12 @@
 @import "utils/_reset";
 @import "utils/_vars";
 @import "utils/_mixins";
+@import "utils/base";
+
+@import "parts/header/_header";
+@import "parts/main/usersPage/_usersPage";
+@import "parts/main/authorizationPage/_authorizationPage";
+@import "parts/main/adminPage/adminPage";
+@import "parts/footer/_footer";
+
 
