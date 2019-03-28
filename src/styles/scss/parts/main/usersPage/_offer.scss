@@ -1,0 +1,77 @@
+.offer {
+    background-color: $default-bg-color;
+    color: $secondaryFontColor;
+
+    .offer-wrapper {
+        padding-top: 85px;
+        width: $mainWrapperWidth;
+        margin: 0 auto;
+        height: 100vh;
+        min-height: 480px;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 36px;
+            text-align: center;
+            padding-bottom: 36px;
+        }
+
+        p {
+            color: $darkFontColor;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+
+        .consec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .block-left {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                width: 200px;
+
+                .unit{
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: bold;  
+                        text-align: center;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+
+            .block-right {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                width: 200px;
+
+                .unit{
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: bold; 
+                        text-align: center;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                border: 1px solid $border-base;
+                border-radius: 50%;
+                width: 280px;
+                height: 280px;
+            }
+        }
+    }
+}

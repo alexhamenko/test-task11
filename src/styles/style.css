@@ -126,7 +126,49 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; }
+    height: 100vh;
+    min-height: 480px;
+    z-index: 0; }
+    .introduction .introduction-wrapper:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border-top: 1px solid #fff;
+      background: #fff;
+      width: 100%;
+      transform: translateY(-50%);
+      z-index: 1; }
+    .introduction .introduction-wrapper .description {
+      margin-top: 40px;
+      margin-bottom: 110px; }
+    .introduction .introduction-wrapper .slider-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 965px;
+      z-index: 2; }
+      .introduction .introduction-wrapper .slider-wrapper .slider {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        background-color: #1b5eaa;
+        box-shadow: 0px 1px 3.75px 1.25px rgba(34, 59, 126, 0.004);
+        width: 227px;
+        height: 257px; }
+        .introduction .introduction-wrapper .slider-wrapper .slider h3 {
+          padding-top: 26px;
+          padding-bottom: 37px;
+          text-transform: uppercase; }
+        .introduction .introduction-wrapper .slider-wrapper .slider p {
+          font-size: 12px;
+          padding-top: 23px;
+          padding-bottom: 18px;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center; }
     .introduction .introduction-wrapper .to-bottom {
       width: 25px;
       height: 40px;
@@ -150,5 +192,83 @@ header {
   100% {
     opacity: 0;
     top: 22px; } }
+
+.offer {
+  background-color: #ffffff;
+  color: #1c8ece; }
+  .offer .offer-wrapper {
+    padding-top: 85px;
+    width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 480px; }
+    .offer .offer-wrapper h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      text-align: center;
+      padding-bottom: 36px; }
+    .offer .offer-wrapper p {
+      color: #223b7e;
+      text-align: center;
+      padding-bottom: 100px; }
+    .offer .offer-wrapper .consec {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .offer .offer-wrapper .consec .block-left {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 200px; }
+        .offer .offer-wrapper .consec .block-left .unit h3 {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          padding-bottom: 25px; }
+      .offer .offer-wrapper .consec .block-right {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 200px; }
+        .offer .offer-wrapper .consec .block-right .unit h3 {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          padding-bottom: 25px; }
+      .offer .offer-wrapper .consec h1 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid #223b7e;
+        border-radius: 50%;
+        width: 280px;
+        height: 280px; }
+
+.about {
+  background-color: #e8f3fa; }
+  .about .about-wrapper {
+    padding-top: 75px;
+    width: 960px;
+    color: #1c8ece;
+    margin: 0 auto; }
+    .about .about-wrapper h2 {
+      text-transform: uppercase;
+      font-size: 36px;
+      text-align: center;
+      padding-bottom: 60px; }
+    .about .about-wrapper .about-sections-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .about .about-wrapper .about-sections-wrapper .about-section {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,61 @@
         flex-direction: column;
         align-items: center;
         height: 100vh;
+        min-height: 480px;
+        z-index: 0;
 
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            border-top: 1px solid #fff;
+            background: #fff;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .description{
+            margin-top: 40px;
+            margin-bottom: 110px;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 965px;
+            z-index: 2;
+
+            .slider {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+
+                border-radius: 15px;
+                background-color: $slider-bg-color;
+                box-shadow: 0px 1px 3.75px 1.25px rgba(34, 59, 126, 0.004);
+                width: 227px;
+                height: 257px; 
+                
+                h3 {
+                    padding-top: 26px;
+                    padding-bottom: 37px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 12px;
+                    padding-top: 23px;
+                    padding-bottom: 18px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                }
+            }
+        }
         .to-bottom {
             width: 25px;
             height: 40px;
